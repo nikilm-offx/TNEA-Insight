@@ -1,0 +1,46 @@
+Create a complete, deployable full-stack web application in Replit called "TNEA Insight" – a bilingual (Tamil and English) college counseling management system inspired by CollegeDunia. Use Next.js for the frontend, FastAPI for the backend, PostgreSQL for the database, and integrate AI/ML features. Ensure the app is secure, responsive, and user-friendly with modern UI (using Tailwind CSS). Include authentication with JWT for logins, and make it bilingual with a language toggle (use i18next for translations).
+
+Key Sections and Features:
+
+Student Section (Requires Student Login):
+
+Dashboard to view past TNEA counseling data: Display historical student placement records (e.g., student marks, chosen college, branch, year) from a sample dataset in the database. Include searchable tables, filters by year/college/branch, and visualizations like charts for top colleges and placement trends.
+
+College Suggestion Tool: Based on user-input marks, category (e.g., general, SC/ST), and preferences, suggest top colleges using a rule-based algorithm or simple ML model (e.g., scikit-learn for similarity matching against historical data).
+
+Cutoff Prediction: Use ML (e.g., regression model trained on past cutoff data) to predict college cutoffs for the current year. Allow users to input their marks and get personalized predictions with confidence scores.
+
+Bilingual Support: All pages and content in both Tamil and English, with a switcher button.
+
+Integrated Chatbot: Embed a simple AI chatbot (using Dialogflow or a custom FastAPI endpoint with Hugging Face models) for queries on counseling processes, college info, or predictions.
+
+Steps to Apply in Counseling: A guided, step-by-step page with interactive accordion sections explaining TNEA application process (e.g., registration, document upload, choice filling, seat allotment), including timelines, required documents, and tips.
+
+Counseling Management Section (Requires Admin Login):
+
+Admin Dashboard: Tools to manage counseling processes, including uploading/processing student applications.
+
+Rank List Generation: Automated tool to generate merit lists based on uploaded student data (marks, categories) using sorting algorithms and rule-based ranking.
+
+Certificate Verification: Integrate OCR (using Tesseract.js or EasyOCR) and ML (e.g., CNN for image authenticity checks) to verify uploaded certificates (e.g., marksheets, community certificates). Flag fakes and store verified data in the database.
+
+Final College Allocation: Simulate or process seat allotments based on ranks, choices, and availability; generate reports on allocated colleges per student.
+
+Data Management: Admins can upload historical TNEA data (CSV import), update cutoffs, and view analytics on placements.
+
+Additional Requirements:
+
+Database Schema: Tables for users (students/admins with roles), historical counseling data (student_id, marks, college_placed, year), colleges (name, cutoffs, seats), and logs for verifications/allocations.
+
+Security and Best Practices: Use environment variables for API keys, implement rate limiting, validate inputs, and add error handling. Ensure GDPR-like data privacy for student info.
+
+AI/ML Integration: Pre-train simple models (e.g., for cutoff prediction using sample data) and expose them via FastAPI endpoints. Include a script to seed the database with dummy TNEA data for testing.
+
+UI/UX Enhancements: Responsive design for mobile/desktop, dark mode toggle, loading spinners, notifications for actions (e.g., "Verification successful"), and export options (PDF/CSV for reports).
+
+Deployment and Testing: Set up Replit deployment with a public URL, include unit tests for key features (e.g., login, prediction), and add a README with setup instructions.
+
+Extras for Polish: Add user profiles, password reset, email notifications (using SendGrid), and analytics dashboards with charts (using Chart.js).
+
+Generate the full code structure, including all necessary files, dependencies, and a setup script to run it. Make it modular, well-commented, and ready to extend.
+
