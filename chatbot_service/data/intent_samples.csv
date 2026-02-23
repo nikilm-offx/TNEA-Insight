@@ -1,0 +1,25 @@
+text,intent
+Hi,greeting
+Hello there,greeting
+Vanakkam,greeting
+Bye,goodbye
+Thanks,goodbye
+See you later,goodbye
+I have 178 cutoff BC can I get CSE in Chennai?,college_recommendation
+Suggest colleges for 182 OC CSE in Coimbatore,college_recommendation
+Recommend government colleges for 175 MBC IT near Madurai,college_recommendation
+Any private colleges for 170 SC ECE in Salem?,college_recommendation
+Can you predict cutoff for this college?,cutoff_prediction
+What will be the cutoff next year?,cutoff_prediction
+Predict the cutoff for CSE in a government college,cutoff_prediction
+Compare PSG Tech vs SSN,college_comparison
+Which is better, CEG or MIT Chennai?,college_comparison
+Is SSN safe target or dream for 178 BC CSE?,safe_target_dream_query
+For 172 MBC ECE is it safe or dream in Chennai?,safe_target_dream_query
+What is the counselling process?,counselling_process
+When will choice filling start?,counselling_process
+What documents are required for verification?,document_verification
+List certificates needed for TNEA verification,document_verification
+I want to know last year trends for CSE Chennai,seat_trend_analysis
+Show previous year cutoff trend for IT in Coimbatore,seat_trend_analysis
+
